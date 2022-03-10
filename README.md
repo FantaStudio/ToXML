@@ -51,3 +51,32 @@ document.Save(path);
 XElement xmlProduct = product.ToXML():
 ```
 
+## Some settings
+**ToXML** also has few attributes to define how pase object
++ XMLName - allows to set your name of class/property
++ XMLParsable - allows to enable/disable class/property converter parse
+
+For example for that
+
+```c# 
+class Product
+{
+    [XMLName("Name")]
+    public string Title { get; set; }
+
+    public string Description { get; set; }
+
+    public decimal Price { get; set; }
+    [XMLParsable(false)]
+    public int Discount { get; set; }
+
+    public DateTime AddedDate { get; set; }
+}
+```
+
+We receive following result
+![image](https://user-images.githubusercontent.com/33997732/157717907-7bcc886b-b0fe-411a-959b-f9f23cb91c33.png)
+
+How we can see, "Title" was renamed as "Name" and "Discount" was ignored by converter
+
+
