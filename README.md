@@ -38,7 +38,7 @@ We can use it's **ObjectToXML** method, that allows convert object to xml
 ```c#
 XElement xmlProduct = XMLConverter.ObjectToXML(product);
 
-//and save it in documnt
+//and save it in document
 strin path = "your path";
 XDocument document = new XDocument();
 document.Add(xmlProduct);
