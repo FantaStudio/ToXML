@@ -75,6 +75,7 @@ class Product
 ```
 
 We receive following result
+
 ![image](https://user-images.githubusercontent.com/33997732/157717907-7bcc886b-b0fe-411a-959b-f9f23cb91c33.png)
 
 How we can see, "Title" was renamed as "Name" and "Discount" was ignored by converter
