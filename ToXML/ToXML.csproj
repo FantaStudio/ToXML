@@ -2,6 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>MindTerror</Authors>
+    <Description>Small extension that converts objects to xml and vice versa</Description>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/FantaStudio/ToXML</PackageProjectUrl>
+    <PackageIcon>logo.jpg</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://github.com/FantaStudio/ToXML</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\logo.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
