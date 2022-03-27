@@ -37,7 +37,7 @@ Product testProduct = new Product
 
 We can use it's **ObjectToXML** method, that allows convert object to xml
 ```c#
-XElement xmlProduct = XMLConverter.ObjectToXML(product);
+XElement xmlProduct = XMLConverter.ObjectToXML(testProduct);
 
 //and save it in document
 strin path = "your path";
@@ -49,11 +49,11 @@ document.Save(path);
 
 **ToXML** provides object extension for more convenient, so we can do the same in other way
 ```c#
-XElement xmlProduct = product.ToXML():
+XElement xmlProduct = testProduct.ToXML():
 ```
 
 ## Some settings
-**ToXML** also has few attributes to define how pase object
+**ToXML** also has few attributes to define how parse object
 + XMLName - allows to set your name of class/property
 + XMLParsable - allows to enable/disable class/property converter parse
 
