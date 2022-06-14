@@ -1,6 +1,6 @@
 # ToXML
 Small extension that converts objects to xml and vice versa
-[Download NuGet Package](https://www.nuget.org/packages/OSRMLib/)
+[Download NuGet Package](https://www.nuget.org/packages/ToXML/)
 
 ## What is it for
 Imagine what we need receive c# object as xml element
